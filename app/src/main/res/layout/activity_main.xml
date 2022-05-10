@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/CustomerCountriesButton"
+        android:layout_width="335dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="112dp"
+        android:text="List of Customer Countries"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:onClick="CustomerCountries"/>
+
+    <Button
+        android:id="@+id/CustomersInUSAButton"
+        android:layout_width="333dp"
+        android:layout_height="42dp"
+        android:layout_marginTop="48dp"
+        android:text="Customers in U.S.A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomerCountriesButton"
+        android:onClick="CustomersInUSA"/>
+
+    <Button
+        android:id="@+id/EmployeesAvailableToCustomersButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="Employees Available to Customers"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/CustomersInUSAButton"
+        android:onClick="EmployeesAvailableToCustomers"/>
+
+    <Button
+        android:id="@+id/NumberOfCustomersByRegionButton"
+        android:layout_width="332dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="48dp"
+        android:text="Number of Customers by Region"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/EmployeesAvailableToCustomersButton"
+        android:onClick="NumberOfCustomersByRegion"/>
+
+    <Button
+        android:id="@+id/InventoryRemainingbutton"
+        android:layout_width="321dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="48dp"
+        android:text="Invertory Remaining After Order"
+        app:backgroundTint="#9C27B0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/NumberOfCustomersByRegionButton"
+        android:onClick="InventoryRemaining"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
